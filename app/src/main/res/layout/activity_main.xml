@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/app_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        />
+
+    <TextView
+        android:id="@+id/txt_result"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/app_toolbar"
+        android:layout_alignStart="@id/app_toolbar"
+        android:background="@color/colorPrimaryBackground"
+        android:elevation="10dp"
+        android:paddingStart="0dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="10dp"
+        android:textAlignment="textEnd"
+        android:textColor="@color/colorSecondaryText"
+        android:textSize="40sp"
+        tools:text="0" />
+
+    <LinearLayout
+        android:id="@+id/ll_act_top"
+        android:layout_below="@+id/txt_result"
+        android:layout_alignStart="@+id/txt_result"
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:orientation="horizontal">
+
+        <include layout="@layout/btn_xml"
+            android:id="@+id/btn_c"/>
+        <include layout="@layout/btn_xml"
+            android:id="@+id/btn_sign"/>
+        <include layout="@layout/btn_xml"
+            android:id="@+id/btn_percent"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_789"
+        android:layout_below="@+id/ll_act_top"
+        android:layout_alignStart="@+id/txt_result"
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:orientation="horizontal">
+        <include layout="@layout/btn_xml"
+            android:id="@+id/btn_7"/>
+        <include layout="@layout/btn_xml"
+            android:id="@+id/btn_8"/>
+        <include layout="@layout/btn_xml"
+            android:id="@+id/btn_9"/>
+            />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_456"
+        android:layout_below="@+id/ll_789"
+        android:layout_alignStart="@+id/txt_result"
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:orientation="horizontal">
+        <include layout="@layout/btn_xml"
+            android:id="@+id/btn_4"/>
+        <include layout="@layout/btn_xml"
+            android:id="@+id/btn_5"/>
+        <include layout="@layout/btn_xml"
+            android:id="@+id/btn_6"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_123"
+        android:layout_below="@+id/ll_456"
+        android:layout_alignStart="@+id/txt_result"
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:orientation="horizontal">
+        <include layout="@layout/btn_xml"
+            android:id="@+id/btn_1"/>
+        <include layout="@layout/btn_xml"
+            android:id="@+id/btn_2"/>
+        <include layout="@layout/btn_xml"
+            android:id="@+id/btn_3"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_0"
+        android:layout_below="@+id/ll_123"
+        android:layout_alignStart="@+id/txt_result"
+        android:layout_alignEnd="@+id/ll_123"
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <include
+            layout="@layout/btn_xml"
+            android:id="@+id/btn_0"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="2"
+            />
+
+        <include
+            layout="@layout/btn_xml"
+            android:id="@+id/btn_dot"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_act_right"
+        android:layout_width="116dp"
+        android:layout_height="450dp"
+        android:layout_alignTop="@+id/ll_act_top"
+        android:layout_toEndOf="@+id/ll_789"
+        android:layout_alignBottom="@+id/ll_0"
+        android:baselineAligned="false"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/btn_xml"
+            android:id="@+id/btn_div"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+
+
+            />
+
+        <include
+            layout="@layout/btn_xml"
+            android:id="@+id/btn_mul"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            />
+
+        <include
+            layout="@layout/btn_xml"
+            android:id="@+id/btn_sub"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            />
+
+        <include
+            layout="@layout/btn_xml"
+            android:id="@+id/btn_sum"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            />
+
+        <include
+            layout="@layout/btn_xml"
+            android:id="@+id/btn_result"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
